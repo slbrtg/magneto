@@ -1,3 +1,11 @@
-<p>
-  torrent-page works!
-</p>
+<h1>Torrent Page DEMO</h1>
+<div class="torrent" *ngFor="let x of allTorrents">
+  <h1>{{x.name}}</h1>
+  <hr>
+  <h2>{{x.description}}</h2>
+  <br>
+  <h2><a href="+ {{x.magnet}} +"></a>DOWNLOAD</h2>
+  <h3>{{x.category}}</h3>
+
+
+</div>
