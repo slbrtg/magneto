@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  performSearch(userSearch: HTMLInputElement): void {
+    console.log(userSearch);
+  }
+
 }
