@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Magneto Torrets</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="torrent-list">Torrent List</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
