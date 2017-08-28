@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { TorrentserviceService } from './torrentservice.service';
+import { TorrentService } from './torrent.service';
 
 describe('TorrentserviceService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [TorrentserviceService]
+      providers: [TorrentService]
     });
   });
 
-  it('should ...', inject([TorrentserviceService], (service: TorrentserviceService) => {
+  it('should ...', inject([TorrentService], (service: TorrentService) => {
     expect(service).toBeTruthy();
   }));
 });
