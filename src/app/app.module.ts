@@ -8,6 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { TorrentListComponent } from './torrent-list/torrent-list.component';
 import { TorrentPageComponent } from './torrent-page/torrent-page.component';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+
 @NgModule({
   declarations: [
     AppComponent,

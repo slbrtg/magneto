@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Torrent } from '../torrent.model';
 
 @Component({
   selector: 'app-torrent-page',
