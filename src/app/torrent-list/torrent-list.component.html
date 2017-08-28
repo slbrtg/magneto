@@ -1,5 +1,5 @@
 <h1>Torrent Page DEMO</h1>
-<div *ngFor="let x of allTorrents | async">
+<div *ngFor="let x of allTorrents | async | sanitizeUrl">
   <h1>{{x.name}}</h1>
   <hr>
   <h2>{{x.description}}</h2>
@@ -15,10 +15,3 @@
 
   <h3>{{x.category}}</h3>
 </div>
-
-
-
-NOT WORKING: unsafe:magnet:?xt=urn:btih:0f91530e856c475d9298e77a89a118f9bfffbd13&amp;dn=Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.AMZN.WEBRip.DDP2.&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969
-
-WORKING:
-magnet:?xt=urn:btih:0f91530e856c475d9298e77a89a118f9bfffbd13&dn=Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.AMZN.WEBRip.DDP2.&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969

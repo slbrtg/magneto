@@ -5,13 +5,13 @@ import { HttpModule } from '@angular/http';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-//import { routing } from './app.routing';
 
 
 import { AppComponent } from './root/app.component';
 import { HomeComponent } from './home/home.component';
 import { TorrentListComponent } from './torrent-list/torrent-list.component';
 import { TorrentPageComponent } from './torrent-page/torrent-page.component';
+import { SanitizeUrlPipe } from './sanitize-url.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +25,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     TorrentListComponent,
-    TorrentPageComponent
+    TorrentPageComponent,
+    SanitizeUrlPipe
   ],
   imports: [
     BrowserModule,

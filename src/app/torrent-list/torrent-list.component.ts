@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Torrent } from '../torrent.model';
 import { TorrentService } from '../torrent.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { SanitizeUrlPipe } from '../sanitize-url.pipe';
 
 @Component({
   selector: 'app-torrent-list',
