@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './root/app.component';
+import { HomeComponent } from './home/home.component';
+import { TorrentListComponent } from './torrent-list/torrent-list.component';
+import { TorrentPageComponent } from './torrent-page/torrent-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    TorrentListComponent,
+    TorrentPageComponent
   ],
   imports: [
     BrowserModule,
