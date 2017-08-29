@@ -1,25 +1,16 @@
-<div *ngFor="let torrent of torrents" class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="torrentDetailPage(torrent)">{{torrent.name}}</h3>
-    {{torrent.description}}
-    {{torrent.category}}
-    {{torrent.magnet}}
-  </div>
-</div>
-
 <h1>Torrent Page DEMO</h1>
-<div *ngFor="let x of allTorrents | async | sanitizeUrl">
-  <h1>{{x.name}}</h1>
+<div *ngFor="let torrent of allTorrents | async">
+  <h1>{{torrent.name}}</h1>
   <hr>
-  <h2>{{x.description}}</h2>
+  <h2>{{torrent.description}}</h2>
   <br>
 
-  <a href="magnet:?xt=urn:btih:0f91530e856c475d9298e77a89a118f9bfffbd13&amp;dn=Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.AMZN.WEBRip.DDP2.&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969">&nbsp;Get this torrent WORKING</a>
+  <a href="magnet:?xt=urn:btih:0f91530e856c475d9298e77a89a118f9bfffbd13&amp;dn=Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.AMZN.WEBRip.DDP2.&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337&amp;tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969">&nbsp;Get this torrent (WORKING)</a>
 
-    <a href="{{x.magnet}}">&nbsp;Get this torrent NOT WORKING</a>
-
-
+    <a href="{{torrent.magnet}}">&nbsp;Get this torrent (NOT WORKING)</a>
 
 
 
-  <h3>{{x.category}}</h3>
+
+
+  <h3>{{torrent.category}}</h3>
