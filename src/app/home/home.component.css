@@ -3,7 +3,7 @@
   width: 125px;
   font-size: 1.7em;
   margin-bottom: 25px;
-  margin-left: 44%;
+  margin-left: 43%;
 }
 
 .form-control {
@@ -15,4 +15,8 @@
 
   color: #000000;
   text-align: center;
+  background-image: url("../../assets/img/mini-magneto.png");
+  background-position: center;
+  color: white;
+  font-size: 6em;
 }
