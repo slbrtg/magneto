@@ -5,7 +5,13 @@
     </div>
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="torrent-list">Torrent List</a></li>
+      <li *ngIf="isLoggedIn">
+        <a>{{userName}}</a>
+        <a (click)="logout()">Log out</a>
+      </li>
+      <li *ngIf="!isLoggedIn">
+        <a (click)="login()">Log in</a>
+      </li>
       <li><a routerLink="disclaimer">Disclaimer</a></li>
     </ul>
   </div>
@@ -13,5 +19,4 @@
 
 <div class="container">
   <router-outlet></router-outlet>
-  <app-torrent-list></app-torrent-list>
 </div>

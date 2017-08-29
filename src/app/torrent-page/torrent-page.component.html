@@ -1,0 +1,31 @@
+<h2>Create new, update, delete post..</h2>
+
+<div>
+  <label>Name:</label>
+  <br>
+  <input #newName>
+</div>
+
+<div>
+  <label>Description:</label>
+  <br>
+  <input #newDescription>
+</div>
+
+<div>
+  <label>Category:</label>
+  <br>
+  <input #newCategory>
+</div>
+
+<div>
+  <label>Magnet:</label>
+  <br>
+  <input #newMagnet>
+</div>
+
+<button (click) = "submitForm(newName.value, newDescription.value, newCategory.value, newMagnet.value); newName.value=''; newDescription.value=''; newCategory.value=''; newMagnet.value=''"></button>
+
+submitForm(name: string, description: string, category: string, magnet: string) {
+  var newTorrent: Torrent = new Torrent(name, description, category, magnet);
+}

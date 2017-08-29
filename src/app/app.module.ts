@@ -9,6 +9,12 @@ import { TorrentListComponent } from './torrent-list/torrent-list.component';
 import { TorrentPageComponent } from './torrent-page/torrent-page.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { masterFirebaseConfig } from './api-keys';
+import { TorrentService } from './torrent.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { SearchPipe } from './search.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,13 +29,17 @@ export const firebaseConfig = {
     HomeComponent,
     TorrentListComponent,
     TorrentPageComponent,
-    DisclaimerComponent
+    DisclaimerComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,8 @@ import { Torrent } from '../torrent.model';
 import { Router } from '@angular/router';
 import { TorrentService } from '../torrent.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { SearchPipe } from '../search.pipe';
+
 
 @Component({
   selector: 'app-torrent-list',
