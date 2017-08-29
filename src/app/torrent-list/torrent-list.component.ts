@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Torrent } from '../torrent.model';
+import { Router } from '@angular/router';
 import { TorrentService } from '../torrent.service';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { SanitizeUrlPipe } from '../sanitize-url.pipe';
 
 @Component({
   selector: 'app-torrent-list',
@@ -11,12 +11,17 @@ import { SanitizeUrlPipe } from '../sanitize-url.pipe';
   providers: [TorrentService]
 })
 export class TorrentListComponent implements OnInit {
-  allTorrents: FirebaseListObservable<any[]>;
+  torrents: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
-  constructor(private torrentService: TorrentService) { }
+  constructor(private router: Router, private torrentService: TorrentService) { }
 
   ngOnInit() {
-    this.allTorrents = this.torrentService.getAllTorrents();
+    this.torrents = this.torrentService.getAllTorrents();
+  }
+
+  torrentDetailPage(clickedTorrent) {
+    this.router.navigate(['torrent-page', clickedTorrent.$key]);
   }
 
 }

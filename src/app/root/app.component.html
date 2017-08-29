@@ -1,5 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Magneto Torrets</a>
+    </div>
 
-<app-torrent-list></app-torrent-list>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="torrent-list">Torrent List</a></li>
+      <li><a routerLink="disclaimer">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+  <app-torrent-list></app-torrent-list>
+</div>

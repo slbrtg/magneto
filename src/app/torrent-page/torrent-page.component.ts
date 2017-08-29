@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Torrent } from '../torrent.model';
 import { TorrentService } from '../torrent.service';
-import { FirebaseObjectObservable } from 'angularfire2/database';
+// import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-torrent-page',
@@ -16,7 +16,7 @@ export class TorrentPageComponent implements OnInit {
   constructor(private torrentService: TorrentService) { }
 
   ngOnInit() {
-
+  //   this.allTorrents = this.torrentService.getAllTorrents();
   }
 
 }

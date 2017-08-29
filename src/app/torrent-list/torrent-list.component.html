@@ -1,3 +1,12 @@
+<div *ngFor="let torrent of torrents" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="torrentDetailPage(torrent)">{{torrent.name}}</h3>
+    {{torrent.description}}
+    {{torrent.category}}
+    {{torrent.magnet}}
+  </div>
+</div>
+
 <h1>Torrent Page DEMO</h1>
 <div *ngFor="let x of allTorrents | async | sanitizeUrl">
   <h1>{{x.name}}</h1>
@@ -14,4 +23,3 @@
 
 
   <h3>{{x.category}}</h3>
-</div>
