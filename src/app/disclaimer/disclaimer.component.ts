@@ -10,7 +10,6 @@ export class DisclaimerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
 
 }
