@@ -9,13 +9,10 @@ import { Torrent } from './torrent.model';
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(input: Torrent[]) {
-    var output: Torrent[] = [];
-    for (var i = 0; i <input.length; i++) {
-      if (input[i].name === "") {
-        output.push(input[i]);
-      }
-    }
-    return output;
+  transform(torrents: any[], input: any): any {
+    if (input === undefined) return torrents;
+    return torrents.filter(function(torrent) {
+      return torrent.name.toLowerCase().includes(input.toLowerCase()) || torrent.category.toLowerCase().includes(input.toLowerCase()) ||  torrent.owner.toLowerCase().includes(input.toLowerCase());
+    })
   }
 }

@@ -10,16 +10,17 @@ import { SearchPipe } from '../search.pipe';
   selector: 'app-torrent-list',
   templateUrl: './torrent-list.component.html',
   styleUrls: ['./torrent-list.component.css'],
-  providers: [TorrentService]
+  providers: [TorrentService],
+  // pipes: [SearchPipe]
 })
 export class TorrentListComponent implements OnInit {
-  torrents: FirebaseListObservable<any[]>;
+  allTorrents: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
   constructor(private router: Router, private torrentService: TorrentService) { }
 
   ngOnInit() {
-    this.torrents = this.torrentService.getAllTorrents();
+    this.allTorrents = this.torrentService.getAllTorrents();
   }
 
   torrentDetailPage(clickedTorrent) {

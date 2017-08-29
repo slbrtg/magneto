@@ -17,6 +17,7 @@ import { SearchPipe } from './search.pipe';
 import { SanitizeUrlPipe } from './sanitize-url.pipe';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 
+
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
