@@ -15,26 +15,23 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class TorrentListComponent implements OnInit {
   allTorrents: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  safeUrl;
 
   constructor(private router: Router, private torrentService: TorrentService, private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-      this.allTorrents = this.torrentService.getAllTorrents();
-      // console.log(this.allTorrents);
-      // setTimeout(function(){
-      //   this.sanitizeUrl(this.allTorrents)
-      // }.bind(this), 1000);
+    this.allTorrents = this.torrentService.getAllTorrents();
+    console.log(this.allTorrents);
+
   }
 
   torrentDetailPage(clickedTorrent) {
     this.router.navigate(['torrent-page', clickedTorrent.$key]);
   }
 
-  // sanitizeUrl(torrents){
-  //   for (let key in torrents){
-  //     this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(torrents[key].magnet);
-  //   }
-  // }
+  sanitizeUrl(torrent: Torrent){
+
+    return this.sanitizer.bypassSecurityTrustResourceUrl(torrent.magnet);
+
+  }
 
 }
