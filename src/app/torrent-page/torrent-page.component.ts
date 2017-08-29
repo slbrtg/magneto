@@ -13,9 +13,6 @@ export class TorrentPageComponent implements OnInit {
   torrentId: string
   torrentToDisplay;
 
-  // following let defined for testing purposes
-  allTorrents;
-
   constructor(private torrentService: TorrentService) { }
 
   ngOnInit() {

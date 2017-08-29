@@ -20,7 +20,6 @@ export class TorrentListComponent implements OnInit {
     this.torrents = this.torrentService.getAllTorrents();
   }
 
-
   torrentDetailPage(clickedTorrent) {
     this.router.navigate(['torrent-page', clickedTorrent.$key]);
   }
