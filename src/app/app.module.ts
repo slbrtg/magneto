@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { TorrentListComponent } from './torrent-list/torrent-list.component';
 import { TorrentPageComponent } from './torrent-page/torrent-page.component';
 import { SanitizeUrlPipe } from './sanitize-url.pipe';
+import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     HomeComponent,
     TorrentListComponent,
     TorrentPageComponent,
-    SanitizeUrlPipe
+    SanitizeUrlPipe,
+    DisclaimerComponent
   ],
   imports: [
     BrowserModule,
