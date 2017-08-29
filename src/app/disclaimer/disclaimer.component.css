@@ -1,0 +1,8 @@
+.jumbotron {
+  background-image: linear-gradient(Salmon, HoneyDew, IndianRed, Turquoise);
+}
+
+.panel-body {
+  background-image: linear-gradient(Coral, Ivory, Aquamarine);
+  font-size: 20px
+}
