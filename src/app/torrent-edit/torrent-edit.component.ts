@@ -11,6 +11,8 @@ import { TorrentService } from '../torrent.service';
 export class TorrentEditComponent implements OnInit {
   @Input( ) selectedTorrent;
 
+  
+
   constructor() { }
 
   ngOnInit() {
