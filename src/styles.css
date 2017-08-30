@@ -9,3 +9,16 @@
   color: white;
   text-align: center;
 }
+
+.jumbotron {
+  color: white;
+  text-align: center;
+  background-image: url("./assets/img/mini-magneto.png");
+  background-position: center;
+  color: white;
+  font-size: 6em;
+}
+
+.magneto-jumbo-text {
+  color: white;
+}

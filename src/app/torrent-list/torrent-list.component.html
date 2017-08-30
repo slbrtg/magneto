@@ -3,10 +3,8 @@
 <br>
 <div *ngFor="let torrent of allTorrents | async | search: input">
 
-  <h1>{{torrent.name}}</h1>
+  <h1><span class="torrent-name">{{torrent.name}}</span> <span class="double-slash">//</span> <a [href]="sanitizeUrl(torrent)"><img class="magnet-img" src="//thepiratebay.org/static/img/icon-magnet.gif" alt="Magnet link"></a></h1>
   <hr>
   <h2>{{torrent.description}}</h2>
-  <br>
-  <a [href]="sanitizeUrl(torrent)">&nbsp;Get this torrent</a>
-  <h3>{{torrent.category}}</h3>
+  <h3>Category: {{torrent.category}}</h3>
 </div>
