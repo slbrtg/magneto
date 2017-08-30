@@ -17,6 +17,7 @@ import { SearchPipe } from './search.pipe';
 import { SanitizeUrlPipe } from './sanitize-url.pipe';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { TorrentEditComponent } from './torrent-edit/torrent-edit.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 export const firebaseConfig = {
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     SearchPipe,
     SanitizeUrlPipe,
     DisclaimerComponent,
-    TorrentEditComponent
+    TorrentEditComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

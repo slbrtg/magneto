@@ -1,3 +1,26 @@
-<p>
-  torrent-edit works!
-</p>
+<h4>Edit Torrent</h4>
+
+<label>New Title:</label>
+<input [(ngModel)]="selectedTorrent.title">
+<br>
+<label>New Category:</label>
+<input [(ngModel)]="selectedTorrent.category">
+<br>
+<label>New Description</label>
+<textarea [(ngModel)]="selectedTorrent.description"></textarea>
+<br>
+<label>New File Type:</label>
+<input [(ngModel)]="selectedTorrent.filetype">
+<br>
+<label>New Systems:</label>
+<input [(ngModel)]="selectedTorrent.systems">
+<br>
+<label>New File Size:</label>
+<input [(ngModel)]="selectedTorrent.filesize">
+<br>
+<label>New Link:</label>
+<textarea [(ngModel)]="selectedTorrent.magnet"></textarea>
+
+<button (click)="editTorrent(selectedTorrent)">Update</button>
+<button (click)="deleteTorrent(selectedTorrent)">Delete</button>
+<hr>

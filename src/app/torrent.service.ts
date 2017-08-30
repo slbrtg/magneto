@@ -32,4 +32,17 @@ export class TorrentService {
     this.afAuth.auth.signOut();
   }
 
+  getTorrentById(torrentId: string){
+    return this.database.object('torrents/' + torrentId);
+  }
+
+  updateTorrent(localUpdatedTorrent) {
+    var torrentEntryInFirebase = this.getTorrentById(localUpdatedTorrent.$key);
+    torrentEntryInFirebase.update({title: localUpdatedTorrent.title, category: localUpdatedTorrent.category, description: localUpdatedTorrent.description, filetype: localUpdatedTorrent.filetype, systems: localUpdatedTorrent.systems, filesize: localUpdatedTorrent.filesize, magnet: localUpdatedTorrent.magnet});
+  }
+
+  deleteTorrent(localDeleteTorrent) {
+    var torrentEntryInFirebase = this.getTorrentById(localDeleteTorrent.$key);
+    torrentEntryInFirebase.remove();
+  }
 }
