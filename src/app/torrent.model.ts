@@ -9,7 +9,7 @@ export class Torrent {
                 public description: string,
                 public filetype: string,
                 public systems: string,
-                public filesize: number,
+                public filesize: string,
                 public magnet: string) {
                 }
 }
