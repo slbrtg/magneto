@@ -18,6 +18,7 @@ import { SanitizeUrlPipe } from './sanitize-url.pipe';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { TorrentEditComponent } from './torrent-edit/torrent-edit.component';
 import { CommentFilterPipe } from './comment-filter.pipe';
+import { AddCommentComponent } from './add-comment/add-comment.component';
 
 
 export const firebaseConfig = {
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     SanitizeUrlPipe,
     DisclaimerComponent,
     TorrentEditComponent,
-    CommentFilterPipe
+    CommentFilterPipe,
+    AddCommentComponent
   ],
   imports: [
     BrowserModule,

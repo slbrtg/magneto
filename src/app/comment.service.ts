@@ -15,8 +15,8 @@ export class CommentService {
     return this.allComments;
   }
 
-  getCommentByTorrentId(torrentId: string){
-    
+  addComment(comment: Comment){
+    this.allComments.push(comment);
   }
 
 }

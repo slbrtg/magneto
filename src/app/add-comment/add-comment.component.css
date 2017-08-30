@@ -1,0 +1,8 @@
+.form-control {
+  width: 40%;
+}
+
+textarea {
+  width: 60%;
+  height: 150px;
+}
