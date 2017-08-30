@@ -1,6 +1,8 @@
-<h1>Torrent Page DEMO</h1>
-<input [(ngModel)]="input">
+<input class="form-control" name="search" [(ngModel)]="input">
+<button class="btn btn-danger"(click)="performSearch(userSearch.value) ; userSearch.value=''">Search</button>
+<br>
 <div *ngFor="let torrent of allTorrents | async | search: input">
+
   <h1>{{torrent.name}}</h1>
   <hr>
   <h2>{{torrent.description}}</h2>
