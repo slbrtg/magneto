@@ -13,4 +13,3 @@ export class Torrent {
                 public magnet: string) {
                 }
 }
-boo
