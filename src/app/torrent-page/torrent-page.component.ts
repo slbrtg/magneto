@@ -16,7 +16,12 @@ export class TorrentPageComponent implements OnInit {
   constructor(private torrentService: TorrentService) { }
 
   ngOnInit() {
-    // this.allTorrents = this.torrentService.getAllTorrents();
+
+  }
+
+  submitForm(name: string, description: string, category: string, magnet: string, owner: string) {
+    var newTorrent: Torrent = new Torrent(name, description, category, magnet, owner);
+    this.torrentService.addTorrent(newTorrent);
   }
 
 }

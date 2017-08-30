@@ -20,6 +20,10 @@ export class TorrentService {
     return this.torrents;
   }
 
+  addTorrent(newTorrent: Torrent) {
+    this.torrents.push(newTorrent);
+  }
+
   login() {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }

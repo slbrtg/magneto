@@ -24,8 +24,10 @@
   <input #newMagnet>
 </div>
 
-<button (click) = "submitForm(newName.value, newDescription.value, newCategory.value, newMagnet.value); newName.value=''; newDescription.value=''; newCategory.value=''; newMagnet.value=''"></button>
+<div>
+  <label>Owner:</label>
+  <br>
+  <input #newOwner>
+</div>
 
-<!-- submitForm(name: string, description: string, category: string, magnet: string) {
-  var newTorrent: Torrent = new Torrent(name, description, category, magnet);
-} -->
+<button (click) = "submitForm(newName.value, newDescription.value, newCategory.value, newMagnet.value, newOwner.value); newName.value=''; newDescription.value=''; newCategory.value=''; newMagnet.value='';newOwner.value='';"></button>
