@@ -12,6 +12,7 @@ import { SanitizeUrlPipe } from './sanitize-url.pipe';
 import { AngularFireModule } from 'angularfire2';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { TorrentEditComponent } from './torrent-edit/torrent-edit.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     TorrentListComponent,
     TorrentPageComponent,
     SanitizeUrlPipe,
-    DisclaimerComponent
+    DisclaimerComponent,
+    TorrentEditComponent
   ],
   imports: [
     BrowserModule,
