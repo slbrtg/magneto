@@ -13,6 +13,7 @@ export class TorrentService {
 
   constructor(public afAuth: AngularFireAuth, private database: AngularFireDatabase) {
     this.torrents = database.list('torrents');
+    this.user = afAuth.authState;
   }
 
   getAllTorrents(){

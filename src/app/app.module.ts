@@ -16,6 +16,9 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { SearchPipe } from './search.pipe';
 import { SanitizeUrlPipe } from './sanitize-url.pipe';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
+import { TorrentEditComponent } from './torrent-edit/torrent-edit.component';
 
 
 export const firebaseConfig = {
@@ -33,7 +36,10 @@ export const firebaseConfig = {
     TorrentPageComponent,
     SearchPipe,
     SanitizeUrlPipe,
-    DisclaimerComponent
+    DisclaimerComponent,
+    PublicComponent,
+    PrivateComponent,
+    TorrentEditComponent
   ],
   imports: [
     BrowserModule,

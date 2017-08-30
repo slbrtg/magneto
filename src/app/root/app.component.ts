@@ -16,22 +16,23 @@ export class AppComponent {
   private isLoggedIn: Boolean;
   private userName: String
 
-  // constructor(public torrentService: TorrentService) {
-  //   this.torrentService.user.subscribe(user => {
-  //     if (user == null) {
-  //       this.isLoggedIn = false;
-  //     } else {
-  //       this.isLoggedIn = true;
-  //       this.userName = user.displayName;
-  //     }
-  //   });
-  // }
-  //
-  // login() {
-  //   this.torrentService.login();
-  // }
-  //
-  // logout() {
-  //   this.torrentService.logout();
-  // }
+  constructor(public torrentService: TorrentService) {
+    this.torrentService.user.subscribe(user => {
+      if (user == null) {
+        this.isLoggedIn = false;
+      } else {
+        this.isLoggedIn = true;
+        this.userName = user.displayName;
+
+      }
+    });
+  }
+
+  login() {
+    this.torrentService.login();
+  }
+
+  logout() {
+    this.torrentService.logout();
+  }
  }

@@ -3,15 +3,12 @@ import { Torrent } from '../torrent.model';
 import { Router } from '@angular/router';
 import { TorrentService } from '../torrent.service';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { SearchPipe } from '../search.pipe';
-
 
 @Component({
   selector: 'app-torrent-list',
   templateUrl: './torrent-list.component.html',
   styleUrls: ['./torrent-list.component.css'],
-  providers: [TorrentService],
-  // pipes: [SearchPipe]
+  providers: [TorrentService]
 })
 export class TorrentListComponent implements OnInit {
   allTorrents: FirebaseListObservable<any[]>;
@@ -26,5 +23,4 @@ export class TorrentListComponent implements OnInit {
   torrentDetailPage(clickedTorrent) {
     this.router.navigate(['torrent-page', clickedTorrent.$key]);
   }
-
 }
