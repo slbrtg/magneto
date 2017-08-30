@@ -6,14 +6,18 @@ import { Torrent } from './torrent.model';
   name: 'sanitizeUrl'
 })
 export class SanitizeUrlPipe implements PipeTransform {
-
+  safeUrl;
   constructor(private sanitizer: DomSanitizer){}
 
   transform(torrents: Torrent) {
     for (let key in torrents){
-      console.log(torrents[key].magnet);
-      this.sanitizer.bypassSecurityTrustResourceUrl(torrents[key].magnet);
-      console.log("SANITIZED")
+      let currentTorrent = this.sanitizer.bypassSecurityTrustResourceUrl(torrents[key].magnet);
+      torrents[key].magnet = currentTorrent;
+      this.safeUrl = currentTorrent;
+
+      console.log(torrents[key].magnet + " Torrent Key Magnet");
+      console.log("SAFE URL " + this.safeUrl );
+
     }
     return torrents;
   }

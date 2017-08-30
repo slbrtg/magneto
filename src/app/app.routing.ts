@@ -5,8 +5,6 @@ import { AppComponent } from './root/app.component';
 import { TorrentListComponent } from './torrent-list/torrent-list.component';
 import { TorrentPageComponent } from './torrent-page/torrent-page.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
-import { PublicComponent } from './public/public.component';
-import { PrivateComponent } from './private/private.component';
 
 const appRoutes: Routes = [
   {
@@ -27,16 +25,6 @@ const appRoutes: Routes = [
   {
     path: 'disclaimer',
     component: DisclaimerComponent
-  },
-
-  {
-    path: 'public',
-    component: PublicComponent
-  },
-
-  {
-    path: 'private',
-    component: PrivateComponent
   }
 
 

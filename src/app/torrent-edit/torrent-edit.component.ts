@@ -9,11 +9,10 @@ import { TorrentService } from '../torrent.service';
   providers: [TorrentService]
 })
 export class TorrentEditComponent implements OnInit {
-  @Input( ) selectedTorrent;
+  @Input () seletedTorrent;
 
-  
+  constructor(private torrentService: TorrentService) { }
 
-  constructor() { }
 
   ngOnInit() {
   }

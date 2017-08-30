@@ -1,8 +1,15 @@
 export class Torrent {
   seeders = 0;
   leechers = 0;
-  constructor(public name: string, public description: string, public category: string, public magnet: string, public owner: string){
-
-  }
-
+  album = null;
+  author = null;
+  dimensions = null;
+  constructor(  public title: string,
+                public category: string,
+                public description: string,
+                public filetype: string,
+                public systems: string,
+                public filesize: number,
+                public magnet: string) {
+                }
 }

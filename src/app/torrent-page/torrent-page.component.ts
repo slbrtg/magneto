@@ -19,8 +19,8 @@ export class TorrentPageComponent implements OnInit {
 
   }
 
-  submitForm(name: string, description: string, category: string, magnet: string, owner: string) {
-    var newTorrent: Torrent = new Torrent(name, description, category, magnet, owner);
+  submitForm(title: string, category: string, description: string, filetype: string, systems: string, filesize: number, magnet: string) {
+    var newTorrent: Torrent = new Torrent(title, category, description, filetype, systems, filesize, magnet);
     this.torrentService.addTorrent(newTorrent);
   }
 

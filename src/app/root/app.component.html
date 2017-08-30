@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Magneto Torrents</a>
+      <a class="navbar-brand" routerLink="">Magneto</a>
     </div>
 
     <ul class="nav navbar-nav navbar-right">
@@ -12,6 +12,10 @@
       <li *ngIf="!isLoggedIn">
         <a (click)="login()">Log in</a>
       </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" id="thing">
+      <li><a routerLink="torrent-list">Torrent List</a></li>
       <li><a routerLink="disclaimer">Disclaimer</a></li>
       <li><a routerLink="torrent-list">Torrent List</a></li>
     </ul>
