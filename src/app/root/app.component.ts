@@ -21,6 +21,8 @@ export class AppComponent {
     this.torrentService.user.subscribe(user => {
       if (user == null) {
         this.isLoggedIn = false;
+        alert("Logging Out...Goodbye ^.^")
+        this.router.navigate(['']);
       } else {
         this.isLoggedIn = true;
         this.userName = user.displayName;

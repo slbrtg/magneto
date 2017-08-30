@@ -18,7 +18,8 @@ import { SanitizeUrlPipe } from './sanitize-url.pipe';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { TorrentEditComponent } from './torrent-edit/torrent-edit.component';
 import { AdminComponent } from './admin/admin.component';
-import { AuthGuardService } from './auth-guard.service'
+import { AuthGuardService } from './auth-guard.service';
+import { ErrorComponent } from './error/error.component'
 
 
 export const firebaseConfig = {
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     SanitizeUrlPipe,
     DisclaimerComponent,
     TorrentEditComponent,
-    AdminComponent
+    AdminComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
