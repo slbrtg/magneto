@@ -1,17 +1,67 @@
 {
-  "torrents" : {
-    "-KsQPUnknOBe-d17f6mF" : {
-      "name" : "GoT S7E7",
-      "description" : "The Dragon and The Wolf",
-      "category" : "tv",
-      "magnet" : "magnet:?xt=urn:btih:0f91530e856c475d9298e77a89a118f9bfffbd13&dn=Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.AMZN.WEBRip.DDP2.&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969",
-      "owner": ""
-    }, "-KsQPUnknOBe-d17f6mA" : {
-      "name" : "GoT S7E7 COPY",
-      "description" : "The Dragon and The Wolf",
-      "category" : "tv",
-      "magnet" : "magnet:?xt=urn:btih:0f91530e856c475d9298e77a89a118f9bfffbd13&dn=Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.AMZN.WEBRip.DDP2.&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969",
-      "owner": ""
+  "torrents" : [{
+      "title" : "Dracula",
+      "category" : "Book",
+      "description" : "During a business visit to Count Dracula's castle in Transylvania, a young English solicitor finds himself at the center of a series of horrifying incidents. He returns home upon his escape from Dracula's grim fortress, but a friend's strange malady — involving sleepwalking, inexplicable blood loss, and mysterious throat wounds — initiates a frantic vampire hunt. Bram Stoker's 1897 horror romance supernatural appeal has spawned a host of film and stage adaptations, and more than a century after its initial publication, it continues to hold readers spellbound.",
+      "filetype" : ".pdf",
+      "systems" : "n/a",
+      "filesize" : "1.31 MiB",
+      "magnet" : "magnet:?xt=urn:btih:7af58662aeeb5762ae43dc3096315ae4d4270451&dn=Bram+Stoker%5C%27s+Dracula+%5BPDF%5D&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
+    }, {
+      "title" : "The Count of Monte-Cristo",
+      "category" : "Book",
+      "description" : "Set against the turbulent years of the Napoleonic  era, Alexandre Dumas's thrilling adventure story  is one of the most widely read romantic novels of  all time. In it the dashing young hero, Edmond Dantès, is betrayed by his enemies and thrown into a secret dungeon in the Chateau d'If -- doomed  to spend his life in a dank prison cell. The story  of his long, intolerable years in captivity, his miraculous escape, and his carefully wrought  revenge creates a dramatic tale of mystery and intrigue  and paints a vision of France -- a dazzling,  dueling, exuberant France -- that has become immortal.",
+      "filetype" : ".epub",
+      "systems" : "n/a",
+      "filesize" : "7.42 MiB",
+      "magnet" : "magnet:?xt=urn:btih:474d23f7f55e4b8a09c3c447d55570c5a6d466e0&dn=The+Count+of+Monte+Cristo&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
+    }, {
+      "title" : "Tears of Steel",
+      "category" : "Film",
+      "description" : "This short scent fiction film is about a group of warriors and scientists who gather at the ”Oude Kerk” in a future Amsterdam to stage a crucial event from the past in a desperate attempt to rescue the world from destructive robots.",
+      "filetype" : "mkv",
+      "systems" : "n/a",
+      "filesize" : "549.02 MiB",
+      "magnet" : "magnet:?xt=urn:btih:a2c1adc668fc25bdcb137d43060b76cd043a7fdb&dn=Tears+of+Steel+%282012%29+1080p+mkv&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
+    }, {
+      "title" : "Big Buck Bunny",
+      "category" : "Film",
+      "description" : "The plot follows a day of the life of Big Buck Bunny when he meets three bullying rodents, Frank (the leader of the rodents), Rinky and Gimera. The rodents amuse themselves by harassing helpless creatures of the forest by throwing fruits, nuts and rocks at them.",
+      "filetype" : "ac3",
+      "systems" : "n/a",
+      "filesize" : "451.06 MiB",
+      "magnet" : "magnet:?xt=urn:btih:2e86074b4851b2b964a1d8db9fae2e7f0b763d03&dn=Big+Buck+Bunny+1080p+%28x264%2C+ac3%29&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
+    }, {
+      "title" : "Beach House - Depression Cherry (2015)",
+      "category" : “Music”,
+      "description" : “Alternative Rock, Rock, Pop, Electronic”,
+      "filetype" : “.mp3”,
+      "systems" : “n/a”,
+      "filesize" : "99.86 MiB",
+      "magnet" : "magnet:?xt=urn:btih:338b6b8f87dd3e59f180e25279ebc915ab91043a&dn=Beach+House+-+Depression+Cherry+%282015%29+320kbps&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
+    }, {
+      "title" : "Deafheaven - New Bermuda",
+      "category" : “Music”,
+      "description" : “Hard Rock, Metal, Rock”,
+      "filetype" : ".mp3",
+      "systems" : "n/a",
+      "filesize" : "107.41 MiB",
+      "magnet" : "magnet:?xt=urn:btih:369c43aa81d9d269841c2841acd2e8faa6c4aa03&dn=Deafheaven+-+New+Bermuda+%28320kbps+MP3%29&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
+    }, {
+      "title" : "Arch Linux",
+      "category" : "Software",
+      "description" : "An independently developed, x86-64 general-purpose GNU/Linux distribution that strives to provide the latest stable versions of most software by following a rolling-release model. The default installation is a minimal base system, configured by the user to only add what is purposely required.",
+      "filetype" : "",
+      "systems" : "Linux, Windows, Mac OS",
+      "filesize" : "516 MB",
+      "magnet" : "magnet:?xt=urn:btih:9fea16aff4ece16e04f98321668a265f0fd22b7e&dn=archlinux-2017.08.01-x86_64.iso&tr=udp://tracker.archlinux.org:6969&tr=http://tracker.archlinux.org:6969/announce"
+    }, {
+      "title" : "GIMP",
+      "category" : "Software",
+      "description" : "GIMP is an acronym for GNU Image Manipulation Program. It is a freely distributed program for such tasks as photo retouching, image composition and image authoring.",
+      "filetype" : ".dmg",
+      "systems" : "Windows",
+      "filesize" : "73.82 MiB",
+      "magnet" : "magnet:?xt=urn:btih:bc3edea2ee1bb6b7806e85f5eb057bfe576c1542&dn=GIMP+v2.8.18+%28Image+Editor%29+-+SeuPirate&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }
-  }
-}
+]}
