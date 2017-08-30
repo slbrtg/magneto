@@ -1,50 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- COMMENTED OUT ADD TORRENT CODE -->
-
-
-<!-- <h2>Create new, update, delete post..</h2>
-
 <div>
-  <label>Name:</label>
-  <br>
-  <input #newName>
+  <h1><span class="torrent-name">{{(torrentToDisplay | async).title}}</span> <span class="double-slash">//</span> <a [href]="sanitizeUrl(torrentToDisplay)"><img class="magnet-img" src="//thepiratebay.org/static/img/icon-magnet.gif" alt="Magnet link"></a></h1>
+  <hr>
+  <h2>{{(torrentToDisplay | async).description}}</h2>
+  <h3>Category: {{(torrentToDisplay | async).category}}</h3>
 </div>
-
-<div>
-  <label>Description:</label>
-  <br>
-  <input #newDescription>
-</div>
-
-<div>
-  <label>Category:</label>
-  <br>
-  <input #newCategory>
-</div>
-
-<div>
-  <label>Magnet:</label>
-  <br>
-  <input #newMagnet>
-</div>
-
-<div>
-  <label>Owner:</label>
-  <br>
-  <input #newOwner>
-</div>
-
-<button (click) = "submitForm(newName.value, newDescription.value, newCategory.value, newMagnet.value, newOwner.value); newName.value=''; newDescription.value=''; newCategory.value=''; newMagnet.value='';newOwner.value='';"></button> -->

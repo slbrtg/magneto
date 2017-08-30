@@ -20,6 +20,11 @@ export class TorrentService {
     return this.torrents;
   }
 
+  getTorrentById(torrentId: string){
+    return this.database.object('torrents/' + torrentId);
+  }
+
+
   addTorrent(newTorrent: Torrent) {
     this.torrents.push(newTorrent);
   }
