@@ -62,5 +62,14 @@
       "systems" : "Windows",
       "filesize" : "73.82 MiB",
       "magnet" : "magnet:?xt=urn:btih:bc3edea2ee1bb6b7806e85f5eb057bfe576c1542&dn=GIMP+v2.8.18+%28Image+Editor%29+-+SeuPirate&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
+  }],
+  "comments": [{
+      "handle": "anon",
+      "comment": "good torrent",
+      "torrentId": "0"
+    }, {
+      "handle": "OtherAnon",
+      "comment": "dank",
+      "torrentId": "1"
   }]
 }
