@@ -1,5 +1,5 @@
 <div>
-  <h1><span class="torrent-name">{{(torrentToDisplay | async).title}}</span> <span class="double-slash">//</span> <a [href]="sanitizeUrl(torrentToDisplay)"><img class="magnet-img" src="//thepiratebay.org/static/img/icon-magnet.gif" alt="Magnet link"></a></h1>
+  <h1><span class="torrent-name">{{(torrentToDisplay | async).title}}</span> <span class="double-slash">//</span> <a [href]="sanitizeUrl(torrentToDisplay | async)"><img class="magnet-img" src="//thepiratebay.org/static/img/icon-magnet.gif" alt="Magnet link"></a></h1>
   <hr>
   <h2>{{(torrentToDisplay | async).description}}</h2>
   <h3>Category: {{(torrentToDisplay | async).category}}</h3>

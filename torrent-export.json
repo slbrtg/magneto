@@ -1,5 +1,4 @@
-{
-  "torrents" : [{
+{ "torrents" : [{
       "title" : "Dracula",
       "category" : "Book",
       "description" : "During a business visit to Count Dracula's castle in Transylvania, a young English solicitor finds himself at the center of a series of horrifying incidents. He returns home upon his escape from Dracula's grim fortress, but a friend's strange malady — involving sleepwalking, inexplicable blood loss, and mysterious throat wounds — initiates a frantic vampire hunt. Bram Stoker's 1897 horror romance supernatural appeal has spawned a host of film and stage adaptations, and more than a century after its initial publication, it continues to hold readers spellbound.",
@@ -33,16 +32,16 @@
       "magnet" : "magnet:?xt=urn:btih:2e86074b4851b2b964a1d8db9fae2e7f0b763d03&dn=Big+Buck+Bunny+1080p+%28x264%2C+ac3%29&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "Beach House - Depression Cherry (2015)",
-      "category" : “Music”,
-      "description" : “Alternative Rock, Rock, Pop, Electronic”,
-      "filetype" : “.mp3”,
-      "systems" : “n/a”,
+      "category" : "music",
+      "description" : "Alternative Rock, Rock, Pop, Electronic",
+      "filetype" : ".mp3",
+      "systems" : "n/a",
       "filesize" : "99.86 MiB",
       "magnet" : "magnet:?xt=urn:btih:338b6b8f87dd3e59f180e25279ebc915ab91043a&dn=Beach+House+-+Depression+Cherry+%282015%29+320kbps&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "Deafheaven - New Bermuda",
-      "category" : “Music”,
-      "description" : “Hard Rock, Metal, Rock”,
+      "category" : "Music",
+      "description" : "Hard Rock, Metal, Rock",
       "filetype" : ".mp3",
       "systems" : "n/a",
       "filesize" : "107.41 MiB",
@@ -63,5 +62,5 @@
       "systems" : "Windows",
       "filesize" : "73.82 MiB",
       "magnet" : "magnet:?xt=urn:btih:bc3edea2ee1bb6b7806e85f5eb057bfe576c1542&dn=GIMP+v2.8.18+%28Image+Editor%29+-+SeuPirate&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
-    }
-]}
+  }]
+}
