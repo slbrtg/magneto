@@ -5,6 +5,7 @@ import { Torrent } from '../torrent.model';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { SearchPipe } from '../search.pipe';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,7 +17,7 @@ export class AppComponent {
   private isLoggedIn: Boolean;
   private userName: String
 
-  constructor(public torrentService: TorrentService) {
+  constructor(public torrentService: TorrentService, private router: Router) {
     this.torrentService.user.subscribe(user => {
       if (user == null) {
         this.isLoggedIn = false;

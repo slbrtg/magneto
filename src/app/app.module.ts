@@ -18,6 +18,7 @@ import { SanitizeUrlPipe } from './sanitize-url.pipe';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { TorrentEditComponent } from './torrent-edit/torrent-edit.component';
 import { AdminComponent } from './admin/admin.component';
+import { AuthGuardService } from './auth-guard.service'
 
 
 export const firebaseConfig = {
@@ -48,7 +49,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [AuthGuardService, TorrentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

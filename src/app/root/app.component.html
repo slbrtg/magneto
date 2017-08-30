@@ -6,8 +6,7 @@
 
     <ul class="nav navbar-nav navbar-right">
       <li *ngIf="isLoggedIn">
-        <a>{{userName}}</a>
-        <a (click)="logout()">Log out</a>
+        <a (click)="logout()">{{userName}} (logout)</a>
       </li>
       <li *ngIf="!isLoggedIn">
         <a (click)="login()">Log in</a>
