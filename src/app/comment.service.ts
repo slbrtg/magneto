@@ -15,4 +15,8 @@ export class CommentService {
     return this.allComments;
   }
 
+  getCommentByTorrentId(torrentId: string){
+    
+  }
+
 }

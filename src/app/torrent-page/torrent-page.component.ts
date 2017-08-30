@@ -8,6 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { CommentService } from '../comment.service';
 import { Comment } from '../comment.model';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { CommentFilterPipe } from '../comment-filter.pipe';
 
 
 @Component({
