@@ -20,8 +20,8 @@ export class AuthGuardService implements CanActivate {
                 .map(authState => !!authState)
                 .do(authenticated => {
                   if (!authenticated) {
-                      alert("Access denied.");
-                      this.router.navigate(['error']);
+                      alert("Must be logged in to continue");
+                      this.router.navigate(['']);
                       return false;
                   } else {
                     return true;
