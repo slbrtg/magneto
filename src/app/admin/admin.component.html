@@ -3,46 +3,46 @@
 <div>
   <label>Title:</label>
   <br>
-  <input #newTitle>
+  <textarea #newTitle></textarea>
 </div>
-
+<br>
 <div>
   <label>Category:</label>
   <br>
   <input #newCategory>
 </div>
-
+<br>
 <div>
   <label>Description:</label>
   <br>
-  <input #newDescription>
+  <textarea #newDescription></textarea>
 </div>
-
+<br>
 <div>
   <label>Filetype:</label>
   <br>
   <input #newFiletype>
 </div>
-
+<br>
 <div>
   <label>Systems:</label>
   <br>
   <input #newSystems>
 </div>
-
+<br>
 <div>
   <label>Filesize:</label>
   <br>
   <input #newFilesize>
 </div>
-
+<br>
 <div>
   <label>Magnet:</label>
   <br>
-  <input #newMagnet>
+  <textarea #newMagnet></textarea>
 </div>
-
-<button (click) = "submitForm(newTitle.value,
+<br>
+<button class="btn btn-success" (click) = "submitForm(newTitle.value,
 newCategory.value,
 newDescription.value,
 newFiletype.value,
@@ -57,6 +57,9 @@ newFiletype.value='';
 newSystems.value='';
 newFilesize.value='';
 newMagnet.value='';">Post New Torrent</button>
+<br>
+<hr>
+<br>
 
 <div>
   <app-torrent-list></app-torrent-list>
