@@ -17,6 +17,7 @@
   background-position: center;
   color: white;
   font-size: 6em;
+  height: 4em;
 }
 
 .magneto-jumbo-text {
@@ -36,4 +37,13 @@
 
 .double-slash {
   color: cyan;
+}
+
+.app-root {
+  background-color: #fafafa;
+}
+
+.router-outlet {
+  margin-top: -20px;
+  background-color: #fafafa;
 }
