@@ -10,3 +10,12 @@
   height: 50px;
   font-size: 1.3em;
 }
+
+hr {
+  border-color: coral;
+}
+ #link {
+   font-weight: bold;
+   font-variant: small-caps;
+
+ }

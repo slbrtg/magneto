@@ -1,14 +1,17 @@
 <input class="form-control" name="search" [(ngModel)]="input">
+<br>
 <button class="btn btn-danger"(click)="performSearch(userSearch.value) ; userSearch.value=''">Search</button>
 <br>
 <div *ngFor="let torrent of allTorrents | async | search: input">
-  <h1>{{torrent.title}}</h1>
-  <hr>
-  <h2>{{torrent.description}}</h2>
+  <h1><strong>Title:</strong> {{torrent.title}}</h1>
   <br>
-  <a [href]="sanitizeUrl(torrent)">&nbsp;Get this torrent</a>
-  <h3>{{torrent.category}}</h3>
+  <h2><strong>Description:</strong> {{torrent.description}}</h2>
+  <br>
+  <div id="link"><a [href]="sanitizeUrl(torrent)">&nbsp;Get this torrent</a></div>
+  <h3><strong>Category:</strong> {{torrent.category}}</h3>
+  <strong><hr></strong>
   <div *ngIf="currentRoute === '/admin'">
+
     <app-torrent-edit [selectedTorrent]="torrent"></app-torrent-edit>
   </div>
 </div>

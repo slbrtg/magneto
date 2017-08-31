@@ -21,6 +21,6 @@
 <label>New Link:</label>
 <textarea [(ngModel)]="selectedTorrent.magnet"></textarea>
 
-<button (click)="editTorrent(selectedTorrent)">Update</button>
-<button (click)="deleteTorrent(selectedTorrent)">Delete</button>
+<button class="btn btn-info" (click)="editTorrent(selectedTorrent)">Update</button>
+<button class="btn btn-danger" (click)="deleteTorrent(selectedTorrent)">Delete</button>
 <hr>

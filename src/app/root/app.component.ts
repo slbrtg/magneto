@@ -5,7 +5,6 @@ import { Torrent } from '../torrent.model';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { SearchPipe } from '../search.pipe';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,7 +25,6 @@ export class AppComponent {
       } else {
         this.isLoggedIn = true;
         this.userName = user.displayName;
-
       }
     });
   }
