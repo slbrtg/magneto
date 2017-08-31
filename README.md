@@ -1,6 +1,6 @@
 # Magneto
 
-#### By Sal Artiga, Lincoln Nguyen, Joel Bakken, and Laura Hamilton
+#### By Saul Artiga, Lincoln Nguyen, Joel Bakken, and Laura Hamilton
 
 ## Description
 
