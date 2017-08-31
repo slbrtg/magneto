@@ -17,21 +17,15 @@
     <span class="torrent-name">{{(torrentToDisplay | async).title}}</span>
     <span class="double-slash">//</span>
     <a [href]="sanitizeUrl(torrentToDisplay | async)">
-      <img class="magnet-img" src="//thepiratebay.org/static/img/icon-magnet.gif" alt="Magnet link">
+      <img class="magnet-img" src="../assets/img/magnet.png" alt="Magnet link">
     </a>
   </h1>
 
   <hr>
-
-  <h3>{{(torrentToDisplay | async).description}}</h3>
-  <h4>Category: {{(torrentToDisplay | async).category}}</h4>
-  <!-- <h1>{{(torrentToDisplay | async).img}}</h1> -->
-
-  <hr>
-
-  <!-- <div [ngStyle]="{'background-image': 'url('+getImg(torrentToDisplay | async)+')'}">
-    things
-  </div> -->
+  <div class="torrent-page-info">
+    <h3 class="torrent-page-description">&nbsp;&nbsp;&nbsp;&nbsp;{{(torrentToDisplay | async).description}}</h3>
+    <h4>Category: {{(torrentToDisplay | async).category}}</h4>
+  </div>
 
 </div>
   <h1>C O M M E N T S</h1>
