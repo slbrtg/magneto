@@ -1,6 +1,15 @@
-<div>
+<div class="torrent-details-box">
+  <h1 class="jumbotron"><span class="magneto-jumbo-text">{{(torrentToDisplay | async).title}}</span></h1>
   <h1><span class="torrent-name">{{(torrentToDisplay | async).title}}</span> <span class="double-slash">//</span> <a [href]="sanitizeUrl(torrentToDisplay | async)"><img class="magnet-img" src="//thepiratebay.org/static/img/icon-magnet.gif" alt="Magnet link"></a></h1>
   <hr>
   <h3>{{(torrentToDisplay | async).description}}</h3>
   <h4>Category: {{(torrentToDisplay | async).category}}</h4>
+  <hr>
+</div>
+  <h1>C O M M E N T S</h1>
+  <app-add-comment></app-add-comment>
+<div *ngFor="let comment of comments | async | commentFilter:torrentId" class="torrent-comments">
+  <hr>
+  <h2>{{comment.comment}}</h2>
+  <h3>sincerely, {{comment.handle}}</h3>
 </div>

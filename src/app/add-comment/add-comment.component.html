@@ -1,0 +1,18 @@
+<div class="comment-form">
+  <div>
+    <label>new comment</label>
+    <br>
+    <textarea #newComment></textarea>
+    <hr>
+  </div>
+  <div>
+    <label>handle</label>
+    <input class="form-control" #newHandle>
+    <hr>
+  </div>
+  <button class="btn btn-primary" (click)="addComment(
+  newComment.value,
+  newHandle.value
+  ); newComment.value=''; newHandle.value=''" >Submit</button>
+
+</div>

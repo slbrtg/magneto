@@ -20,7 +20,6 @@ export class TorrentListComponent implements OnInit {
 
   ngOnInit() {
     this.allTorrents = this.torrentService.getAllTorrents();
-    console.log(this.allTorrents);
 
   }
 
