@@ -11,18 +11,19 @@ import { Location } from '@angular/common';
   providers: [CommentService]
 })
 export class AddCommentComponent implements OnInit {
-  torrentId: string;
+  torrentId;
 
   constructor(private commentService: CommentService, private location: Location,private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
+      console.log(urlParameters['id']);
       this.torrentId = urlParameters['id'];
     });
   }
 
   addComment(comment: string, handle: string){
-    console.log("Torrent ID from Component" + this.torrentId);
+    console.log("Torrent ID from Component " + this.torrentId);
     let newComment: Comment = new Comment(handle, comment, this.torrentId);
     this.commentService.addComment(newComment);
   }
