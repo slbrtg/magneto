@@ -1,6 +1,6 @@
 <input class="form-control" name="search" [(ngModel)]="input">
 <br>
-<button class="btn btn-danger"(click)="performSearch(userSearch.value) ; userSearch.value=''">Search</button>
+<button class="btn"(click)="performSearch(userSearch.value) ; userSearch.value=''">Search</button>
 <br>
 <div *ngFor="let torrent of allTorrents | async | search: input">
 

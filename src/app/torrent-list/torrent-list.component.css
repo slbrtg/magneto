@@ -19,3 +19,8 @@ hr {
    font-variant: small-caps;
 
  }
+
+.btn {
+  background-color: #6d3655;
+  color: white;
+}

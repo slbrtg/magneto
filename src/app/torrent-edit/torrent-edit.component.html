@@ -1,25 +1,28 @@
-<h4>Edit Torrent</h4>
+<div class="edit">
+  <h4>Edit Torrent</h4>
 
-<label>New Title:</label>
-<input [(ngModel)]="selectedTorrent.title">
-<br>
-<label>New Category:</label>
-<input [(ngModel)]="selectedTorrent.category">
-<br>
-<label>New Description</label>
-<textarea [(ngModel)]="selectedTorrent.description"></textarea>
-<br>
-<label>New File Type:</label>
-<input [(ngModel)]="selectedTorrent.filetype">
-<br>
-<label>New Systems:</label>
-<input [(ngModel)]="selectedTorrent.systems">
-<br>
-<label>New File Size:</label>
-<input [(ngModel)]="selectedTorrent.filesize">
-<br>
-<label>New Link:</label>
-<textarea [(ngModel)]="selectedTorrent.magnet"></textarea>
-
-<button class="btn btn-info" (click)="editTorrent(selectedTorrent)">Update</button>
-<button class="btn btn-danger" (click)="deleteTorrent(selectedTorrent)">Delete</button><hr>
+  <label>Title:</label>
+  <input [(ngModel)]="selectedTorrent.title">
+  <br>
+  <label>Category:</label>
+  <input [(ngModel)]="selectedTorrent.category">
+  <br>
+  <label>Description</label>
+  <textarea [(ngModel)]="selectedTorrent.description"></textarea>
+  <br>
+  <label>File Type:</label>
+  <input [(ngModel)]="selectedTorrent.filetype">
+  <br>
+  <label>Systems:</label>
+  <input [(ngModel)]="selectedTorrent.systems">
+  <br>
+  <label>File Size:</label>
+  <input [(ngModel)]="selectedTorrent.filesize">
+  <br>
+  <label>Magnet Link:</label>
+  <textarea [(ngModel)]="selectedTorrent.magnet"></textarea>
+  <br>
+  <button class="btn btn-info" (click)="editTorrent(selectedTorrent)">Update</button>
+  <button class="btn btn-danger" (click)="deleteTorrent(selectedTorrent)">Delete</button>
+</div>
+  <hr>
