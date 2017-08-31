@@ -6,8 +6,7 @@
 
     <ul class="nav navbar-nav navbar-right">
       <li *ngIf="isLoggedIn">
-        <a>{{userName}}</a>
-        <a (click)="logout()">Log out</a>
+        <a (click)="logout()">{{userName}} (logout)</a>
       </li>
       <li *ngIf="!isLoggedIn">
         <a (click)="login()">Log in</a>
@@ -17,6 +16,7 @@
     <ul class="nav navbar-nav navbar-right" id="thing">
       <li><a routerLink="torrent-list">Torrent List</a></li>
       <li><a routerLink="disclaimer">Disclaimer</a></li>
+      <li><a routerLink="admin">Update Post</a></li>
     </ul>
   </div>
 </nav>

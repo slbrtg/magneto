@@ -1,0 +1,63 @@
+<h2>Post a New Torrent</h2>
+
+<div>
+  <label>Title:</label>
+  <br>
+  <input #newTitle>
+</div>
+
+<div>
+  <label>Category:</label>
+  <br>
+  <input #newCategory>
+</div>
+
+<div>
+  <label>Description:</label>
+  <br>
+  <input #newDescription>
+</div>
+
+<div>
+  <label>Filetype:</label>
+  <br>
+  <input #newFiletype>
+</div>
+
+<div>
+  <label>Systems:</label>
+  <br>
+  <input #newSystems>
+</div>
+
+<div>
+  <label>Filesize:</label>
+  <br>
+  <input #newFilesize>
+</div>
+
+<div>
+  <label>Magnet:</label>
+  <br>
+  <input #newMagnet>
+</div>
+
+<button (click) = "submitForm(newTitle.value,
+newCategory.value,
+newDescription.value,
+newFiletype.value,
+newSystems.value,
+newFilesize.value,
+newMagnet.value);
+
+newTitle.value='';
+newCategory.value='';
+newDescription.value='';
+newFiletype.value='';
+newSystems.value='';
+newFilesize.value='';
+newMagnet.value='';">Post New Torrent</button>
+
+<div>
+  <app-torrent-list></app-torrent-list>
+</div>

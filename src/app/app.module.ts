@@ -19,6 +19,9 @@ import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { TorrentEditComponent } from './torrent-edit/torrent-edit.component';
 import { CommentFilterPipe } from './comment-filter.pipe';
 import { AddCommentComponent } from './add-comment/add-comment.component';
+import { AdminComponent } from './admin/admin.component';
+import { ErrorComponent } from './error/error.component';
+import { AuthGuardService } from './auth-guard.service';
 
 
 export const firebaseConfig = {
@@ -39,7 +42,9 @@ export const firebaseConfig = {
     DisclaimerComponent,
     TorrentEditComponent,
     CommentFilterPipe,
-    AddCommentComponent
+    AddCommentComponent,
+    AdminComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [AuthGuardService, TorrentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

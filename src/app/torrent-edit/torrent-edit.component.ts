@@ -9,12 +9,21 @@ import { TorrentService } from '../torrent.service';
   providers: [TorrentService]
 })
 export class TorrentEditComponent implements OnInit {
-  @Input () seletedTorrent;
+  @Input () selectedTorrent;
 
   constructor(private torrentService: TorrentService) { }
 
-
   ngOnInit() {
+  }
+
+  editTorrent(torrentToEdit) {
+    this.torrentService.updateTorrent(torrentToEdit);
+  }
+
+  deleteTorrent(torrentToDelete) {
+    if(confirm("Do you want to continue to delete this post?")) {
+      this.torrentService.deleteTorrent(torrentToDelete);
+    }
   }
 
 }
