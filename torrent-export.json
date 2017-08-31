@@ -5,6 +5,7 @@
       "filetype" : ".pdf",
       "systems" : "n/a",
       "filesize" : "1.31 MiB",
+      "image": "../../assets/img/torrent-img/dracula.jpg",
       "magnet" : "magnet:?xt=urn:btih:7af58662aeeb5762ae43dc3096315ae4d4270451&dn=Bram+Stoker%5C%27s+Dracula+%5BPDF%5D&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "The Count of Monte-Cristo",
@@ -13,6 +14,7 @@
       "filetype" : ".epub",
       "systems" : "n/a",
       "filesize" : "7.42 MiB",
+      "image": "default",
       "magnet" : "magnet:?xt=urn:btih:474d23f7f55e4b8a09c3c447d55570c5a6d466e0&dn=The+Count+of+Monte+Cristo&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "Tears of Steel",
@@ -21,6 +23,7 @@
       "filetype" : "mkv",
       "systems" : "n/a",
       "filesize" : "549.02 MiB",
+      "image": "default",
       "magnet" : "magnet:?xt=urn:btih:a2c1adc668fc25bdcb137d43060b76cd043a7fdb&dn=Tears+of+Steel+%282012%29+1080p+mkv&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "Big Buck Bunny",
@@ -29,6 +32,7 @@
       "filetype" : "ac3",
       "systems" : "n/a",
       "filesize" : "451.06 MiB",
+      "image": "default",
       "magnet" : "magnet:?xt=urn:btih:2e86074b4851b2b964a1d8db9fae2e7f0b763d03&dn=Big+Buck+Bunny+1080p+%28x264%2C+ac3%29&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "Beach House - Depression Cherry (2015)",
@@ -37,6 +41,7 @@
       "filetype" : ".mp3",
       "systems" : "n/a",
       "filesize" : "99.86 MiB",
+      "image": "default",
       "magnet" : "magnet:?xt=urn:btih:338b6b8f87dd3e59f180e25279ebc915ab91043a&dn=Beach+House+-+Depression+Cherry+%282015%29+320kbps&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "Deafheaven - New Bermuda",
@@ -45,6 +50,7 @@
       "filetype" : ".mp3",
       "systems" : "n/a",
       "filesize" : "107.41 MiB",
+      "image": "default",
       "magnet" : "magnet:?xt=urn:btih:369c43aa81d9d269841c2841acd2e8faa6c4aa03&dn=Deafheaven+-+New+Bermuda+%28320kbps+MP3%29&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
     }, {
       "title" : "Arch Linux",
@@ -53,6 +59,7 @@
       "filetype" : "",
       "systems" : "Linux, Windows, Mac OS",
       "filesize" : "516 MB",
+      "image": "default",
       "magnet" : "magnet:?xt=urn:btih:9fea16aff4ece16e04f98321668a265f0fd22b7e&dn=archlinux-2017.08.01-x86_64.iso&tr=udp://tracker.archlinux.org:6969&tr=http://tracker.archlinux.org:6969/announce"
     }, {
       "title" : "GIMP",
@@ -61,6 +68,7 @@
       "filetype" : ".dmg",
       "systems" : "Windows",
       "filesize" : "73.82 MiB",
+      "image": "default",
       "magnet" : "magnet:?xt=urn:btih:bc3edea2ee1bb6b7806e85f5eb057bfe576c1542&dn=GIMP+v2.8.18+%28Image+Editor%29+-+SeuPirate&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969"
   }],
   "comments": [{

@@ -1,10 +1,10 @@
 # Magneto
 
-#### By Sal Artiga, Lincoln Nguyen, Joel Bakken, and Laura Hamilton
+#### By Saul Artiga, Lincoln Nguyen, Joel Bakken, and Laura Hamilton
 
 ## Description
 
-This application acts as a legal open source archive of different media that the user can download. This application is a demonstration of JavaScript Angular using Firebase database with multiple page routes. A user can search the archives held on firebase, create new archives, delete specific archive entries, edit existing archives, and use the magnet links to download the content. 
+This application acts as a legal open source archive of different media that the user can download. This application is a demonstration of JavaScript Angular using Firebase database with multiple page routes. A user can search the archives held on firebase, create new archives, delete specific archive entries, edit existing archives, and use the magnet links to download the content.
 
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 

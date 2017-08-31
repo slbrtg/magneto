@@ -29,6 +29,7 @@ export class TorrentPageComponent implements OnInit {
       this.torrentId = urlParameters['id'];
     });
     this.torrentToDisplay = this.torrentService.getTorrentById(this.torrentId);
+    console.log(this.torrentToDisplay.title);
     this.comments = this.commentService.getAllComments();
 
   }
@@ -37,4 +38,7 @@ export class TorrentPageComponent implements OnInit {
     return this.sanitizer.bypassSecurityTrustResourceUrl(torrent.magnet);
   }
 
+  getImg(torrent: Torrent){
+    return torrent.image;
+  }
 }

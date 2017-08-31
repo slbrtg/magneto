@@ -4,6 +4,7 @@ export class Torrent {
   album = null;
   author = null;
   dimensions = null;
+  image = 'default';
   constructor(  public title: string,
                 public category: string,
                 public description: string,
