@@ -24,8 +24,10 @@
   <hr>
   <div class="torrent-page-info">
     <h3 class="torrent-page-description">&nbsp;&nbsp;&nbsp;&nbsp;{{(torrentToDisplay | async).description}}</h3>
-    <h4>Category: {{(torrentToDisplay | async).category}}</h4>
   </div>
+  <br>
+  <h3>Category: {{(torrentToDisplay | async).category}}</h3>
+  <h3>File Size: {{(torrentToDisplay | async).filesize}}</h3>
 
 </div>
   <h1>C O M M E N T S</h1>

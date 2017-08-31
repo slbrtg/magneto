@@ -18,3 +18,7 @@ hr {
    font-weight: bold;
    font-variant: small-caps;
  }
+
+ .torrent-name {
+   color: #C1333F;
+ }

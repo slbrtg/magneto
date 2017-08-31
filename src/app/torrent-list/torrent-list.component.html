@@ -4,9 +4,9 @@
 <br>
 <div class="torrent-list" *ngFor="let torrent of allTorrents | async | search: input">
 
-  <h1><span class="torrent-name" (click)="goToTorrentPage(torrent)">{{torrent.title}}</span> <span class="double-slash">//</span> <a [href]="sanitizeUrl(torrent)"><img class="magnet-img" src="../assets/img/magnet.png" alt="Magnet link"></a></h1>
+  <h1><a><span class="torrent-name" (click)="goToTorrentPage(torrent)">{{torrent.title}}</span></a> <span class="double-slash">//</span> <a [href]="sanitizeUrl(torrent)"><img class="magnet-img" src="../assets/img/magnet.png" alt="Magnet link"></a></h1>
   <h3>Category: {{torrent.category}}</h3>
-  <h3>File Type: {{torrent.filetype}}</h3>
+  <h3>File Size: {{torrent.filesize}}</h3>
   <hr>
   <div *ngIf="currentRoute === '/admin'">
     <app-torrent-edit [selectedTorrent]="torrent"></app-torrent-edit>
